@@ -1,0 +1,2 @@
+{"sanscrito":"Parivrtta Janu Sirsasana","ingles":"Revolved Head To Knee Pose","español":"Postura de la Cabeza a la Rodilla Invertida","palabrasBase":"Parivrtta\u003dinvertido\u003dinvested; Janu\u003drodilla\u003dknee; Sirsa\u003dcabeza\u003dhead; Asana\u003dpostura\u003dposture"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido","palabrasBase":"Parivrtta\u003dinvertido\u003dinvested; Trikona\u003dtriángulo\u003dtriangle; Asana\u003dpostura\u003dposture"}
