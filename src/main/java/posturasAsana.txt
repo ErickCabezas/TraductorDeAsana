@@ -1,2 +1,23 @@
-{"sanscrito":"Parivrtta Janu Sirsasana","ingles":"Revolved Head To Knee Pose","español":"Postura de la Cabeza a la Rodilla Invertida","palabrasBase":"Parivrtta\u003dinvertido\u003dinvested; Janu\u003drodilla\u003dknee; Sirsa\u003dcabeza\u003dhead; Asana\u003dpostura\u003dposture"}
-{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido","palabrasBase":"Parivrtta\u003dinvertido\u003dinvested; Trikona\u003dtriángulo\u003dtriangle; Asana\u003dpostura\u003dposture"}
+{"sanscrito":"Tadasana","ingles":"Mountain Pose","español":"Postura de la Montaña"}
+{"sanscrito":"Adho Mukha Svanasana","ingles":"Downward-Facing Dog","español":"Perro mirando hacia abajo"}
+{"sanscrito":"Virabhadrasana I","ingles":"Warrior I","español":"Guerrero I"}
+{"sanscrito":"Virabhadrasana II","ingles":"Warrior II","español":"Guerrero II"}
+{"sanscrito":"Vrikshasana","ingles":"Tree Pose","español":"Postura del Árbol"}
+{"sanscrito":"Balasana","ingles":"Child's Pose","español":"Postura del Niño"}
+{"sanscrito":"Ardha Bhujangasana","ingles":"Half Cobra Pose","español":"Postura de la Cobra a la mitad"}
+{"sanscrito":"Paschimottanasana","ingles":"Seated Forward Bend","español":"Flexión hacia adelante sentado"}
+{"sanscrito":"Setu Bandhasana","ingles":"Bridge Pose","español":"Postura del Puente"}
+{"sanscrito":"Shavasana","ingles":"Corpse Pose","español":"Postura del Cadáver"}
+{"sanscrito":"Trikonasana","ingles":"Triangle Pose","español":"Postura del Triángulo"}
+{"sanscrito":"Kumbhakasana","ingles":"Plank Pose","español":"Postura de la Plancha"}
+{"sanscrito":"Urdhva Mukha Svanasana","ingles":"Upward-Facing Dog","español":"Perro mirando hacia arriba"}
+{"sanscrito":"Matsyasana","ingles":"Fish Pose","español":"Postura del Pez"}
+{"sanscrito":"Utkatasana","ingles":"Chair Pose","español":"Postura de la Silla"}
+{"sanscrito":"Malasana","ingles":"Garland Pose","español":"Postura de la Guirnalda"}
+{"sanscrito":"Eka Pada Rajakapotasana","ingles":"Pigeon Pose","español":"Postura de la Paloma"}
+{"sanscrito":"Urdhva Hastasana","ingles":"Upward Salute","español":"Saludo hacia arriba"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido"}
+{"sanscrito":"Parivrtta Janu Sirsasana","ingles":"Revolved Head To Knee Pose","español":"Postura de la Cabeza a la Rodilla Invertida"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido"}
