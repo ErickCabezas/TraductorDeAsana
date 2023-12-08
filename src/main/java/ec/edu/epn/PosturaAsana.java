@@ -4,7 +4,6 @@ public class PosturaAsana {
     private String sanscrito;
     private String ingles;
     private String español;
-    private String palabrasBase;
 
     public PosturaAsana(String sanscrito, String ingles, String español) {
         this.sanscrito = sanscrito;
