@@ -41,8 +41,8 @@ public class Diccionario {
     }
 
     //forma de ingresar palabras base: ardha=mitad=half; chandra=luna=moon.....
-    public boolean agregarPostura(String sanscrito, String ingles, String español) {
-        PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español);
+    public boolean agregarPostura(String sanscrito, String ingles, String español, String palabrasBase) {
+        PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español, palabrasBase);
         escribirPostura(posturaAsana);
         return this.posturas.add(posturaAsana);
     }

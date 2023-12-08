@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Diccionario diccionario = new Diccionario();
 
-        System.out.println(diccionario.agregarPostura(
+        /*System.out.println(diccionario.agregarPostura(
                 "Parivrtta Trikonasana",
                 "Revolved Triangle Pose",
                 "Postura del Triángulo Invertido"));
@@ -14,9 +14,9 @@ public class Main {
         System.out.println(diccionario.agregarMorfema(
                 "Asana",
                 "posture",
-                "postura"));
+                "postura"));*/
 
-        System.out.println(diccionario.buscarPostura("Malasana"));
+        System.out.println(diccionario.buscarPostura("lso"));
         System.out.println(diccionario.buscarMorfema("hasta"));
     }
 }
