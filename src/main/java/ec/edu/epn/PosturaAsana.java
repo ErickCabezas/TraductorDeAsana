@@ -10,7 +10,7 @@ public class PosturaAsana {
         this.sanscrito = sanscrito;
         this.ingles = ingles;
         this.español = español;
-        this.palabrasBase=palabrasBase;
+        this.palabrasBase = palabrasBase;
     }
 
     public String getSanscrito() {
@@ -23,19 +23,20 @@ public class PosturaAsana {
 
     @Override
     public String toString() {
-        return "Traducción de la postura: " + sanscrito +
+        return "Traducción de la POSTURA: " + sanscrito +
                 "\n==> Inglés: " + ingles +
-                "\n==> Español: " + español+
-                "\n"+presentarTraducionDeMorfemas(this.palabrasBase);
+                "\n==> Español: " + español +
+                "\n" + presentarTraducionDeMorfemas(this.palabrasBase);
     }
-    public String presentarTraducionDeMorfemas(String palabrasBase){
-        String traduccionMorfemas="";
+
+    public String presentarTraducionDeMorfemas(String palabrasBase) {
+        String traduccionMorfemas = "";
         String[] morfemas = palabrasBase.split(";");
-        Diccionario diccionario=new Diccionario();
-        int i=0;
-        for(i=0;i<morfemas.length;i++){
-            traduccionMorfemas+=diccionario.buscarMorfema(morfemas[i]);
+        Diccionario diccionario = new Diccionario();
+        int i = 0;
+        for (i = 0; i < morfemas.length; i++) {
+            traduccionMorfemas += diccionario.buscarMorfema(morfemas[i]);
         }
-        return  traduccionMorfemas;
+        return traduccionMorfemas;
     }
 }

@@ -19,14 +19,14 @@ public class Diccionario {
     }
 
     public void obtenerPosturas() {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/posturasAsana.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/posturasAsana .txt"))) {
             String linea;
             while ((linea = br.readLine()) != null) {
                 PosturaAsana posturaAsana = gson.fromJson(linea, PosturaAsana.class);
                 this.posturas.add(posturaAsana);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Archivo no encontrado");
         }
     }
 

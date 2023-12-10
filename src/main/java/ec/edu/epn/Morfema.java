@@ -14,7 +14,7 @@ public class Morfema {
 
     @Override
     public String toString() {
-        return "\nTraducción del morfema: " + sanscrito +
+        return "\nTraducción del MORFEMA: " + sanscrito +
                 "\n==> Ingles = " + ingles +
                 "\n==> Español = " + español;
     }
