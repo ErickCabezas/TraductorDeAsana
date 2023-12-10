@@ -76,7 +76,7 @@ public class Diccionario {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Archivo no encontrado");
         }
     }
 
