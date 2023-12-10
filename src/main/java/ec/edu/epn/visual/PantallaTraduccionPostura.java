@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class PantallaTraduccionPostura extends JFrame {
     private JPanel panelPrincipal;
@@ -37,6 +39,16 @@ public class PantallaTraduccionPostura extends JFrame {
                 PantallaBienvenida pantallaBienvenida = new PantallaBienvenida();
                 pantallaBienvenida.crearFrame();
                 dispose();
+            }
+        });
+        posturaTextField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                char caracter = e.getKeyChar();
+                if(Character.isDigit(caracter)){
+                    JOptionPane.showMessageDialog(null, "Por favor, no ingrese números.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+                    e.consume();
+                }
             }
         });
     }

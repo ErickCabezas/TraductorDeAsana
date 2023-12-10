@@ -1,5 +1,7 @@
 package ec.edu.epn;
 
+/*Es la clase que sirve de modelo para los morfémas.
+ Como atributos tiene su traducción a español e ingles.*/
 public class Morfema {
 
     private String sanscrito;
@@ -12,6 +14,8 @@ public class Morfema {
         this.español = español;
     }
 
+
+    //Este método es empleado para mostrar la traducción en las interfaces.
     @Override
     public String toString() {
         return "\nTraducción del MORFEMA: " + sanscrito +
