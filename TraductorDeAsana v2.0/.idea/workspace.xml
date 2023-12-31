@@ -5,37 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89333a6d-5077-4569-bf06-8a2785be247d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Documentación/CasosDePrueba_DarkChococrispisInc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Documentación/DocumentacionDiseño_DarkChococrispisInc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Documentación/HistoriasDeUsuario_DarkChococrispisInc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/Diccionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/Morfema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/PosturaAsana.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaBienvenida.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaInicial.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaInicial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoAcercaDe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoIniciar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoMorfema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoPostura.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoRegresar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/ec/edu/epn/visual/imagenes/iconoTraducir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/morfemas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/posturasAsana.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/pruebaPosturas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Imagen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Morfema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Morfema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +42,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "291",
-    "git-widget-placeholder": "bc995b3a",
-    "last_opened_file_path": "C:/Users/user/Documents/Bryan/U/- 6to SEMESTRE/- Calidad de Software/Proyecto/TraductorDeAsana/TraductorDeAsana v2.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;142&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;196&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/TraductorDeAsana/TraductorDeAsana v2.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\Bryan\U\- 6to SEMESTRE\- Calidad de Software\Proyecto\TraductorDeAsana\TraductorDeAsana v2.0\src\main\java\ec\edu\epn\visual\imagenes\iconos" />
@@ -109,56 +91,5 @@
       <updated>1703702676594</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

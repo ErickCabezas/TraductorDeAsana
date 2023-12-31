@@ -5,15 +5,17 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.util.ArrayList;
 
-/*La clase Diccionario tiene todas las posturas, y morfemas, incluidas sus traducciones.*/
+/*La clase Diccionario tiene todas las posturas, y morfemas, incluidas sus traducciones.
+* En una primera instancia, estas están almacenadas en un archivo de texto. Posteriormente
+* se utiliza métodos que extraen los datos de ahí, y los guardan en ArrayLists.*/
 public class Diccionario {
     private ArrayList<PosturaAsana> posturas;
     private ArrayList<Morfema> morfemas;
     private Gson gson;
 
-    /*Al momento de contruir el objeto Diccionario, se llama a dos métodos internos
-    * que tienen como función leer el archivo txt de posturas y morfemas, con el fin
-    * obtener y almacenar esos datos en los ArrayList.*/
+    /*Al momento de construir el objeto Diccionario, automáticamente se llenan los
+    * ArrayLists con los datos de los archivos de texto. Esto se hace con los métodos
+    * obtenerPosturas y obtenerMorfema */
     public Diccionario() {
         gson = new Gson();
         posturas = new ArrayList<>();
@@ -22,7 +24,7 @@ public class Diccionario {
         obtenerMorfema();
     }
 
-    /*Las posturas son leidas y guardadas en el ArrayList. Este funcionamiento se repite para los morfémas*/
+    /*Las posturas son leidas y guardadas en el ArrayList. Este algoritmo es igual para los morfemas.*/
     public void obtenerPosturas() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/posturasAsana.txt"))) {
             String linea;
@@ -37,38 +39,6 @@ public class Diccionario {
         }
     }
 
-    /*Este método permite ingresar nuevas posturas en el archivo txt. Este funcionamiento se repite para los morfémas*/
-    public void escribirPostura(PosturaAsana postura) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/java/posturasAsana.txt", true))) {
-            String json = gson.toJson(postura);
-            bw.write(json);
-            bw.newLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /*Es el método que permite agrear nuevas palabras. Por el momento no es utilizado.*/
-    //forma de ingresar palabras base: ardha=mitad=half; chandra=luna=moon.....
-    //ELIMINAR?????????????????????????????????
-    /*
-    public boolean agregarPostura(String sanscrito, String ingles, String español, String palabrasBase) {
-        PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español, palabrasBase);
-        escribirPostura(posturaAsana);
-        return this.posturas.add(posturaAsana);
-    }
-    */
-
-
-    /*Es el método para buscar una portura en el ArrayList. Este funcionamiento se repite para los morfémas.*/
-    public PosturaAsana buscarPostura(String sanskrit) {
-        for (PosturaAsana postura : posturas) {
-            if (postura.getSanscrito().equalsIgnoreCase(sanskrit)) {
-                return postura;
-            }
-        }
-        return null;
-    }
 
     public void obtenerMorfema() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/morfemas.txt"))) {
@@ -84,24 +54,17 @@ public class Diccionario {
         }
     }
 
-    public void escribirMorfema(Morfema morfema) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/java/morfemas.txt", true))) {
-            String json = gson.toJson(morfema);
-            bw.write(json);
-            bw.newLine();
-        } catch (IOException e) {
-            e.printStackTrace();
+
+    /*Es el método para buscar una postura en el ArrayList. El funcionamiento es igual para los morfemas*/
+    public PosturaAsana buscarPostura(String sanskrit) {
+        for (PosturaAsana postura : posturas) {
+            if (postura.getSanscrito().equalsIgnoreCase(sanskrit)) {
+                return postura;
+            }
         }
+        return null;
     }
 
-    //ELIMINAR?
-    /*
-    public boolean agregarMorfema(String sanscrito, String ingles, String español) {
-        Morfema morfema = new Morfema(sanscrito, ingles, español);
-        escribirMorfema(morfema);
-        return this.morfemas.add(morfema);
-    }
-    */
     public Morfema buscarMorfema(String morfemaEnSanscrito) {
         for (Morfema morfema : morfemas) {
             if (morfema.getSanscrito().equalsIgnoreCase(morfemaEnSanscrito)) {

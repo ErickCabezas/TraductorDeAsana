@@ -28,7 +28,7 @@
             <properties>
               <opaque value="false"/>
             </properties>
-            <border type="line" title="La traducción de ese morféma es...">
+            <border type="line" title="La traducción de ese morfema es...">
               <font style="2"/>
               <title-color color="-16777216"/>
               <color color="-5366555"/>
@@ -71,7 +71,7 @@
             <properties>
               <font name="Courier New" size="26" style="1"/>
               <foreground color="-16776931"/>
-              <text value="Traducción de morfémas"/>
+              <text value="Traducción de morfemas"/>
             </properties>
           </component>
           <component id="98756" class="javax.swing.JTextField" binding="morfemaTextField">

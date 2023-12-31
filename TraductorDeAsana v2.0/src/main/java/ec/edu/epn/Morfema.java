@@ -1,6 +1,6 @@
 package ec.edu.epn;
 
-/*Es la clase que sirve de modelo para los morfémas.
+/*Es la clase que sirve de modelo para los morfemas.
  Como atributos tiene su traducción a español e ingles.*/
 public class Morfema {
 
@@ -24,28 +24,19 @@ public class Morfema {
                 "\n==> Español = " + español;
     }
 
-    public String getSanscrito() {
-        return sanscrito;
-    }
 
-    public void setSanscrito(String sanscrito) {
-        this.sanscrito = sanscrito;
-    }
+    /*------------Getters & Setters--------------*/
 
-    public String getIngles() {
-        return ingles;
-    }
+    public String getSanscrito() {return sanscrito;}
 
-    public void setIngles(String ingles) {
-        this.ingles = ingles;
-    }
+    public void setSanscrito(String sanscrito) {this.sanscrito = sanscrito;}
 
-    public String getEspañol() {
-        return español;
-    }
+    public String getIngles() {return ingles;}
 
-    public void setEspañol(String español) {
-        this.español = español;
-    }
+    public void setIngles(String ingles) {this.ingles = ingles;}
+
+    public String getEspañol() {return español;}
+
+    public void setEspañol(String español) {this.español = español;}
 
 }

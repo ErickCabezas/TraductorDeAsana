@@ -77,7 +77,7 @@
                 </constraints>
                 <properties>
                   <font size="18"/>
-                  <text value="Traducir morféma"/>
+                  <text value="Traducir morfema"/>
                 </properties>
               </component>
             </children>

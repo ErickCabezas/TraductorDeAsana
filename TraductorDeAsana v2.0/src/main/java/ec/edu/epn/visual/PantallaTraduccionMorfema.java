@@ -1,7 +1,6 @@
 package ec.edu.epn.visual;
 
 import ec.edu.epn.Diccionario;
-import ec.edu.epn.Imagen;
 import ec.edu.epn.Morfema;
 
 import javax.swing.*;
