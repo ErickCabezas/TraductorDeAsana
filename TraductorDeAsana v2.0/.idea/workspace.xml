@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TraductorDeAsanas-Morfemas" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89333a6d-5077-4569-bf06-8a2785be247d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Imagen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Morfema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Morfema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaInicial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posturasAsana.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posturasAsana.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;142&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;196&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/TraductorDeAsana/TraductorDeAsana v2.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "142",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "235",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TraductorDeAsana/TraductorDeAsana v2.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37430942",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\Bryan\U\- 6to SEMESTRE\- Calidad de Software\Proyecto\TraductorDeAsana\TraductorDeAsana v2.0\src\main\java\ec\edu\epn\visual\imagenes\iconos" />
@@ -61,7 +68,7 @@
       <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana\src\main\java\ec\edu\epn\visual\imagenes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ec.edu.epn.Main" />
       <module name="TraductorDeAsana" />
@@ -75,9 +82,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TraductorDeAsana-v2.0.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/TraductorDeAsana-v2.0.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JAR Application.TraductorDeAsana-v2.0.jar" />
       </list>
     </recent_temporary>
   </component>

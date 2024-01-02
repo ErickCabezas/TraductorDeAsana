@@ -75,7 +75,7 @@ public class PantallaInicial extends JFrame {
         setIconImage(image);
     }
 
-    public void colocarIconos(String direccion, JButton boton){
+    public void colocarIconos(String direccion, @org.jetbrains.annotations.NotNull JButton boton){
         ImageIcon iconoNuevo = new ImageIcon(direccion);
         Image scaledIcon = iconoNuevo.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         boton.setIcon(new ImageIcon(scaledIcon));

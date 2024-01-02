@@ -17,6 +17,7 @@ public class PantallaTraduccionMorfema extends JFrame {
     private JTextPane panelTraduccion;
     private JButton regresarButton;
     private JPanel panelImagen;
+    private JComboBox comboBox;
 
 
     public PantallaTraduccionMorfema() {
@@ -34,7 +35,15 @@ public class PantallaTraduccionMorfema extends JFrame {
                     panelImagen.add(retornarImagenMorfema("holaMorfema.gif"));
                     JOptionPane.showMessageDialog(null, "Error #2\nNo ha ingresado ningún morféma.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                 }else{
-                    Morfema morfema = diccionario.buscarMorfema(morfemaBuscado);
+                    int tipoTraduccion = comboBox.getSelectedIndex();
+                    Morfema morfema = null;
+                    if(tipoTraduccion == 0){
+                        morfema = diccionario.buscarMorfemaSanscrito(morfemaBuscado);
+                    }else if (tipoTraduccion == 1){
+                        morfema = diccionario.buscarMorfemaEspaniol(morfemaBuscado);
+                    } else if (tipoTraduccion == 2) {
+                        morfema = diccionario.buscarMorfemaIngles(morfemaBuscado);
+                    }
                     if(morfema==null){
                         panelTraduccion.setText("No hallamos ese morfema.");
                         panelImagen.removeAll();
@@ -65,6 +74,16 @@ public class PantallaTraduccionMorfema extends JFrame {
                     JOptionPane.showMessageDialog(null, "Por favor, no ingrese números.", "Advertencia", JOptionPane.WARNING_MESSAGE);
                     e.consume();
                 }
+            }
+        });
+        comboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                morfemaTextField.setText("");
+                panelTraduccion.setText("");
+                panelImagen.removeAll();
+                panelImagen.add(retornarImagenMorfema("holaMorfema.gif"));
+
             }
         });
     }

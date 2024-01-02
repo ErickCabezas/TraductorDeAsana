@@ -29,7 +29,7 @@ public class PosturaAsana {
         Diccionario diccionario = new Diccionario();
         int i = 0;
         for (i = 0; i < morfemas.length; i++) {
-            traduccionMorfemas += diccionario.buscarMorfema(morfemas[i]);
+            traduccionMorfemas += diccionario.buscarMorfemaSanscrito(morfemas[i]);
         }
         return traduccionMorfemas;
     }

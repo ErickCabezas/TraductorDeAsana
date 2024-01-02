@@ -3,6 +3,7 @@ package ec.edu.epn;
 import com.google.gson.Gson;
 
 import java.io.*;
+import java.text.Normalizer;
 import java.util.ArrayList;
 
 /*La clase Diccionario tiene todas las posturas, y morfemas, incluidas sus traducciones.
@@ -55,22 +56,71 @@ public class Diccionario {
     }
 
 
-    /*Es el método para buscar una postura en el ArrayList. El funcionamiento es igual para los morfemas*/
-    public PosturaAsana buscarPostura(String sanskrit) {
+    /*Es el método para buscar una postura en el ArrayList. La búsqueda se puede
+     hacer por Sánscrito, Español o Ingles. Es por esto que hay 3 métodos similares,
+     cada uno está especializado en un lenguaje.
+     El funcionamiento es igual para los morfemas*/
+    public PosturaAsana buscarPosturaSanscrito(String posturaSanscrito) {
         for (PosturaAsana postura : posturas) {
-            if (postura.getSanscrito().equalsIgnoreCase(sanskrit)) {
+            if (postura.getSanscrito().equalsIgnoreCase(posturaSanscrito)) {
                 return postura;
             }
         }
         return null;
     }
 
-    public Morfema buscarMorfema(String morfemaEnSanscrito) {
+    public PosturaAsana buscarPosturaEspaniol(String posturaEspaniol ) {
+        for (PosturaAsana postura : posturas) {
+            if (suprimirTildes(postura.getEspañol()).equalsIgnoreCase(suprimirTildes(posturaEspaniol))) {
+                return postura;
+            }
+        }
+        return null;
+    }
+    public PosturaAsana buscarPosturaIngles(String posturaIngles) {
+        for (PosturaAsana postura : posturas) {
+            if (postura.getIngles().equalsIgnoreCase(posturaIngles)) {
+                return postura;
+            }
+        }
+        return null;
+    }
+
+
+
+    public Morfema buscarMorfemaSanscrito(String morfemaSanscrito) {
         for (Morfema morfema : morfemas) {
-            if (morfema.getSanscrito().equalsIgnoreCase(morfemaEnSanscrito)) {
+            if (morfema.getSanscrito().equalsIgnoreCase(morfemaSanscrito)) {
                 return morfema;
             }
         }
         return null;
     }
+
+    public Morfema buscarMorfemaEspaniol(String morfemaEspaniol) {
+        for (Morfema morfema : morfemas) {
+            if (suprimirTildes(morfema.getEspañol()).equalsIgnoreCase(suprimirTildes(morfemaEspaniol))) {
+                return morfema;
+            }
+        }
+        return null;
+    }
+
+    public Morfema buscarMorfemaIngles(String morfemaIngles) {
+        for (Morfema morfema : morfemas) {
+            if (morfema.getIngles().equalsIgnoreCase(morfemaIngles)) {
+                return morfema;
+            }
+        }
+        return null;
+    }
+
+    /*Es el método que nos ayuda a quitar las tildes en las posturas y morfemas en
+     Español. Este permite que el cliente pueda ingresar la palabra con o sin acento
+     y hallar de todas maneras el morfema o postura.*/
+    private static String suprimirTildes(String cadena) {
+        String normalized = Normalizer.normalize(cadena, Normalizer.Form.NFD);
+        return normalized.replaceAll("[^\\p{ASCII}]", "");
+    }
+
 }

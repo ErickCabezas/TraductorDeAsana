@@ -4,7 +4,7 @@
 {"sanscrito":"Virabhadrasana I","ingles":"Warrior I","español":"Guerrero I","palabrasBase":"Virabhadra;asana", "nombreImagen":"postura4"}
 {"sanscrito":"Virabhadrasana II","ingles":"Warrior II","español":"Guerrero II","palabrasBase":"Virabhadra;asana", "nombreImagen":"postura5"}
 {"sanscrito":"Vrikshasana","ingles":"Tree Pose","español":"Postura del Árbol","palabrasBase":"Vriksha;asana", "nombreImagen":"postura6"}
-{"sanscrito":"Balasana","ingles":"Child\u0027s Pose","español":"Postura del Niño","palabrasBase":"Bala;asana", "nombreImagen":"postura7"}
+{"sanscrito":"Balasana","ingles":"Child Pose","español":"Postura del Niño","palabrasBase":"Bala;asana", "nombreImagen":"postura7"}
 {"sanscrito":"Ardha Bhujangasana","ingles":"Half Cobra Pose","español":"Postura de la Cobra a la mitad","palabrasBase":"Ardha;Bhujanga;asana", "nombreImagen":"postura8"}
 {"sanscrito":"Paschimottanasana","ingles":"Seated Forward Bend","español":"Flexión hacia adelante sentado","palabrasBase":"paschima;uttana;asana", "nombreImagen":"postura9"}
 {"sanscrito":"Setu Bandhasana","ingles":"Bridge Pose","español":"Postura del Puente","palabrasBase":"setu;bandha;asana", "nombreImagen":"postura10"}

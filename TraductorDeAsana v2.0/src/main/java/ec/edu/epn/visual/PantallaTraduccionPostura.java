@@ -17,12 +17,14 @@ public class PantallaTraduccionPostura extends JFrame {
     private JButton traducirButton;
     private JButton regresarButton;
     private JPanel panelImagen;
+    private JComboBox comboBox;
 
     public PantallaTraduccionPostura() {
         this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoTraducir.png",traducirButton);
         this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoRegresar.png",regresarButton);
         Diccionario diccionario = new Diccionario();
         panelImagen.add(retornarImagenPostura("inicioPostura.gif"));
+
         traducirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,7 +36,16 @@ public class PantallaTraduccionPostura extends JFrame {
 
                     JOptionPane.showMessageDialog(null, "Error #1\nNo ha ingresado ningúna postura.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                 }else{
-                    PosturaAsana postura = diccionario.buscarPostura(posturaBuscada);
+                    int tipoTraduccion = comboBox.getSelectedIndex();
+                    PosturaAsana postura = null;
+                    if(tipoTraduccion==0){
+                        postura = diccionario.buscarPosturaSanscrito(posturaBuscada);
+                    }else if(tipoTraduccion==1){
+                        postura = diccionario.buscarPosturaEspaniol(posturaBuscada);
+                    }else if(tipoTraduccion==2){
+                        postura = diccionario.buscarPosturaIngles(posturaBuscada);
+                    }
+
                     if(postura == null){
                         panelTraduccion.setText("No hallamos esa postura.");
                         panelImagen.removeAll();
@@ -65,10 +76,20 @@ public class PantallaTraduccionPostura extends JFrame {
                 }
             }
         });
+        comboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                posturaTextField.setText("");
+                panelTraduccion.setText("");
+                panelImagen.removeAll();
+                panelImagen.add(retornarImagenPostura("inicioPostura.gif"));
+
+            }
+        });
     }
 
     public void crearFrame() {
-        setSize(680, 610);
+        setSize(680, 630);
         setTitle("Traductor");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);

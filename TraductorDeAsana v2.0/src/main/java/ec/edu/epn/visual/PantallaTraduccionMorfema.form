@@ -76,13 +76,27 @@
           </component>
           <component id="98756" class="javax.swing.JTextField" binding="morfemaTextField">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="210" height="-1"/>
               </grid>
             </constraints>
             <properties>
               <margin top="2" left="6" bottom="2" right="6"/>
               <text value=""/>
+            </properties>
+          </component>
+          <component id="18bc0" class="javax.swing.JComboBox" binding="comboBox">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="210" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="- Traducir desde sánscrito"/>
+                <item value="- Traducir desde español"/>
+                <item value="- Traducir desde ingles"/>
+              </model>
             </properties>
           </component>
         </children>
