@@ -12,12 +12,12 @@ En el mundo del yoga, la comprensión de posturas en español e inglés es cruci
 <p align="center">
     <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/traduccion.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
 </p>
-3. En el caso de ingresar una postura se mostrarán sus respectivas traducciones junto con un GIF que demuestra como realizar la misma. Para el morfema en cambio se mostrará la traducción junto con una imagen del significado de la misma. En las siguiente imágenes podemos observar un poco del funcionamiento para ambos casos de traducción.
+3. En el caso de ingresar una postura se mostrarán sus respectivas traducciones junto con un GIF que demuestra como realizar la misma, además se podrá escuchar un audio de fondo el cúal leerá la postura ingresada como sus respectivaas traducciones. Para el morfema en cambio, se mostrará la traducción junto con una imagen del significado de la misma. En las siguiente imágenes podemos observar un poco del funcionamiento para ambos casos de traducción.
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/postura.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/postura.png" alt="Mensaje de inicio de la aplicación" width="500" height="400">
 </p>
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/morfema.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/morfema.png" alt="Mensaje de inicio de la aplicación" width="500" height="400">
 </p>
 4. Para regresar al menú de selección de traducción simplemente se debe dar click en el botón de regresar que se encuentra en la parte inferior.
 
