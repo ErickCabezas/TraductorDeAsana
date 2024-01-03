@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class PantallaBienvenida extends JFrame {
     private JPanel panelPrincipal;
@@ -13,10 +14,10 @@ public class PantallaBienvenida extends JFrame {
     private JPanel panelCentral;
 
     public PantallaBienvenida() {
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoRegresar.png",regresarButton);
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoPostura.png",traducirPosturaButton);
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoMorfema.png",traducirMorfemaButton);
-        panelCentral.add(this.retornarImagen("robotBienvenida.gif"));
+        this.colocarIconos("/iconos/iconoRegresar.png",regresarButton);
+        this.colocarIconos("/iconos/iconoPostura.png",traducirPosturaButton);
+        this.colocarIconos("/iconos/iconoMorfema.png",traducirMorfemaButton);
+        panelCentral.add(this.retornarImagen("/robotBienvenida.gif"));
 
 
         traducirPosturaButton.addActionListener(new ActionListener() {
@@ -53,12 +54,12 @@ public class PantallaBienvenida extends JFrame {
         setLocationRelativeTo(null);
         add(panelPrincipal);
         setVisible(true);
-        Image image = Toolkit.getDefaultToolkit().getImage("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoVentana.png");
+        Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/iconos/iconoVentana.png"));
         setIconImage(image);
     }
 
     public void colocarIconos(String direccion, JButton boton){
-        ImageIcon iconoNuevo = new ImageIcon(direccion);
+        ImageIcon iconoNuevo = new ImageIcon(Objects.requireNonNull(getClass().getResource(direccion)));
         Image scaledIcon = iconoNuevo.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         boton.setIcon(new ImageIcon(scaledIcon));
         boton.setPreferredSize(new Dimension(50, 50));
@@ -66,7 +67,7 @@ public class PantallaBienvenida extends JFrame {
     }
 
     public JLabel retornarImagen(String nombreImagen){
-        ImageIcon imagen = new ImageIcon("src/main/java/ec/edu/epn/visual/imagenes/ventanas/"+nombreImagen);
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/ventanas"+nombreImagen));
         Image scaledIcon = imagen.getImage().getScaledInstance(250, 260, Image.SCALE_DEFAULT);
         JLabel label = new JLabel(new ImageIcon(scaledIcon));
         return label;

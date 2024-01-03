@@ -3,12 +3,18 @@ package ec.edu.epn.visual;
 import ec.edu.epn.Diccionario;
 import ec.edu.epn.PosturaAsana;
 
+import javax.sound.sampled.LineUnavailableException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
+
 
 public class PantallaTraduccionPostura extends JFrame {
     private JPanel panelPrincipal;
@@ -18,26 +24,44 @@ public class PantallaTraduccionPostura extends JFrame {
     private JButton regresarButton;
     private JPanel panelImagen;
     private JComboBox comboBox;
+    private JButton botonSonido;
+
+    PosturaAsana postura = null;
+    Clip clip;
+
+    {
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public PantallaTraduccionPostura() {
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoTraducir.png",traducirButton);
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoRegresar.png",regresarButton);
+        this.colocarIconos("/iconos/iconoTraducir.png",traducirButton);
+        this.colocarIconos("/iconos/iconoRegresar.png",regresarButton);
+        this.colocarIconos("/iconos/iconoSonido.png", botonSonido);
+
         Diccionario diccionario = new Diccionario();
         panelImagen.add(retornarImagenPostura("inicioPostura.gif"));
 
         traducirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String posturaBuscada = posturaTextField.getText();
+                if(clip.isRunning()){
+                    clip.stop();
+                    clip.close();
+                }
+
+                String posturaBuscada = posturaTextField.getText().trim();
                 if(posturaBuscada.equalsIgnoreCase("")){
                     panelTraduccion.setText("");
+                    JOptionPane.showMessageDialog(null, "Error #1\nNo ha ingresado ningúna postura.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                     panelImagen.removeAll();
                     panelImagen.add(retornarImagenPostura("inicioPostura.gif"));
-
-                    JOptionPane.showMessageDialog(null, "Error #1\nNo ha ingresado ningúna postura.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                 }else{
                     int tipoTraduccion = comboBox.getSelectedIndex();
-                    PosturaAsana postura = null;
+                    postura = null;
                     if(tipoTraduccion==0){
                         postura = diccionario.buscarPosturaSanscrito(posturaBuscada);
                     }else if(tipoTraduccion==1){
@@ -54,6 +78,7 @@ public class PantallaTraduccionPostura extends JFrame {
                         panelTraduccion.setText(postura.toString());
                         panelImagen.removeAll();
                         panelImagen.add(retornarImagenPostura(postura.getNombreImagen()+".gif"));
+
                     }
                 }
             }
@@ -63,6 +88,8 @@ public class PantallaTraduccionPostura extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 PantallaBienvenida pantallaBienvenida = new PantallaBienvenida();
                 pantallaBienvenida.crearFrame();
+                clip.stop();
+                clip.close();
                 dispose();
             }
         });
@@ -83,25 +110,47 @@ public class PantallaTraduccionPostura extends JFrame {
                 panelTraduccion.setText("");
                 panelImagen.removeAll();
                 panelImagen.add(retornarImagenPostura("inicioPostura.gif"));
+                if(clip.isRunning()){
+                    clip.stop();
+                    clip.close();
+                }
 
+            }
+        });
+        botonSonido.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(panelTraduccion.getText().equalsIgnoreCase("")||panelTraduccion.getText().equalsIgnoreCase("No hallamos esa postura.")){
+                    if(!clip.isRunning()){
+                        reproducirAudio("noHayPostura.wav");
+                    }
+                    JOptionPane.showMessageDialog(null, "La postura no es válida, o no has ingresado ninguna.\nPor favor, escriba una.", "Recuerda...", JOptionPane.WARNING_MESSAGE);
+                }else{
+                    if(!clip.isRunning()){
+                        reproducirAudio(postura.getNombreImagen()+".wav");
+                    }else{
+                        clip.stop();
+                        clip.close();
+                    }
+                }
             }
         });
     }
 
     public void crearFrame() {
-        setSize(680, 630);
+        setSize(680, 660);
         setTitle("Traductor");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(null);
         add(panelPrincipal);
         setVisible(true);
-        Image image = Toolkit.getDefaultToolkit().getImage("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoVentana.png");
+        Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/iconos/iconoVentana.png"));
         setIconImage(image);
     }
 
     public void colocarIconos(String direccion, JButton boton){
-        ImageIcon iconoNuevo = new ImageIcon(direccion);
+        ImageIcon iconoNuevo = new ImageIcon(getClass().getResource(direccion));
         Image scaledIcon = iconoNuevo.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         boton.setIcon(new ImageIcon(scaledIcon));
         boton.setPreferredSize(new Dimension(50, 50));
@@ -109,10 +158,24 @@ public class PantallaTraduccionPostura extends JFrame {
     }
 
     public JLabel retornarImagenPostura(String nombreImagen){
-        ImageIcon imagen = new ImageIcon("src/main/java/ec/edu/epn/visual/imagenes/posturas/"+nombreImagen);
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/posturas/"+nombreImagen));
         Image scaledIcon = imagen.getImage().getScaledInstance(390, 340, Image.SCALE_DEFAULT);
         JLabel label = new JLabel(new ImageIcon(scaledIcon));
         return label;
     }
+
+    public void reproducirAudio(String audio){
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(getClass().getResource("/audio/"+audio).toURI()).getAbsoluteFile());
+            clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+
+        }catch (Exception e){
+            System.out.println("Error al reproducir el sonido: " + e.getMessage());
+        }
+    }
+
+
 
 }

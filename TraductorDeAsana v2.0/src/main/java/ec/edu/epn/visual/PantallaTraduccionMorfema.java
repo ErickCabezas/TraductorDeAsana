@@ -21,19 +21,19 @@ public class PantallaTraduccionMorfema extends JFrame {
 
 
     public PantallaTraduccionMorfema() {
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoTraducir.png",traducirButton);
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoRegresar.png",regresarButton);
+        this.colocarIconos("/iconos/iconoTraducir.png",traducirButton);
+        this.colocarIconos("/iconos/iconoRegresar.png",regresarButton);
         Diccionario diccionario = new Diccionario();
         panelImagen.add(retornarImagenMorfema("holaMorfema.gif"));
         traducirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String morfemaBuscado = morfemaTextField.getText();
+                String morfemaBuscado = morfemaTextField.getText().trim();
                 if(morfemaBuscado.equalsIgnoreCase("")){
                     panelTraduccion.setText("");
+                    JOptionPane.showMessageDialog(null, "Error #2\nNo ha ingresado ningún morféma.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                     panelImagen.removeAll();
                     panelImagen.add(retornarImagenMorfema("holaMorfema.gif"));
-                    JOptionPane.showMessageDialog(null, "Error #2\nNo ha ingresado ningún morféma.\nPor favor, escriba una.", "!Algo salió mal!", JOptionPane.ERROR_MESSAGE);
                 }else{
                     int tipoTraduccion = comboBox.getSelectedIndex();
                     Morfema morfema = null;
@@ -83,7 +83,6 @@ public class PantallaTraduccionMorfema extends JFrame {
                 panelTraduccion.setText("");
                 panelImagen.removeAll();
                 panelImagen.add(retornarImagenMorfema("holaMorfema.gif"));
-
             }
         });
     }
@@ -96,12 +95,12 @@ public class PantallaTraduccionMorfema extends JFrame {
         setLocationRelativeTo(null);
         add(panelPrincipal);
         setVisible(true);
-        Image image = Toolkit.getDefaultToolkit().getImage("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoVentana.png");
+        Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/iconos/iconoVentana.png"));
         setIconImage(image);
     }
 
     public void colocarIconos(String direccion, JButton boton){
-        ImageIcon iconoNuevo = new ImageIcon(direccion);
+        ImageIcon iconoNuevo = new ImageIcon(getClass().getResource(direccion));
         Image scaledIcon = iconoNuevo.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         boton.setIcon(new ImageIcon(scaledIcon));
         boton.setPreferredSize(new Dimension(50, 50));
@@ -110,7 +109,7 @@ public class PantallaTraduccionMorfema extends JFrame {
     }
 
     public JLabel retornarImagenMorfema(String nombreImagen){
-        ImageIcon imagen = new ImageIcon("src/main/java/ec/edu/epn/visual/imagenes/morfemas/"+nombreImagen);
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/morfemas/"+nombreImagen));
         Image scaledIcon = imagen.getImage().getScaledInstance(260, 200, Image.SCALE_DEFAULT);
         JLabel label = new JLabel(new ImageIcon(scaledIcon));
         return label;

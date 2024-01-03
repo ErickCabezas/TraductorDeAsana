@@ -19,9 +19,9 @@ public class Morfema {
     //Este método es empleado para mostrar la traducción en las interfaces.
     @Override
     public String toString() {
-        return "\nTraducción del MORFEMA: " + sanscrito +
-                "\n==> Ingles = " + ingles +
-                "\n==> Español = " + español;
+        return "\nTraducción del MORFEMA: " + sanscrito + "." +
+                "\nEn Inglés es: " + ingles + "." +
+                "\nEn Español es: " + español + ".";
     }
 
 

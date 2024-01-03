@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TraductorDeAsanas-Morfemas" />
+      <artifact name="TraductorDeAsana:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89333a6d-5077-4569-bf06-8a2785be247d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionMorfema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaTraduccionPostura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posturasAsana.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posturasAsana.txt" afterDir="false" />
-    </list>
+    <list default="true" id="89333a6d-5077-4569-bf06-8a2785be247d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,22 +39,35 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "142",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "235",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "240",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/TraductorDeAsana/TraductorDeAsana v2.0",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/TraductorDeAsana v2.5/TraductorDeAsana v2.5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.37430942",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\IdeaProjects\TraductorDeAsana v2.0\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana v2.5\TraductorDeAsana v2.5\src\main\resources\iconos" />
+      <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana v2.5\TraductorDeAsana v2.5\src\main\resources\audio" />
       <recent name="C:\Users\user\Documents\Bryan\U\- 6to SEMESTRE\- Calidad de Software\Proyecto\TraductorDeAsana\TraductorDeAsana v2.0\src\main\java\ec\edu\epn\visual\imagenes\iconos" />
       <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana\src\main\java\ec\edu\epn\visual\imagenes\ventanas" />
       <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana\src\main\java\ec\edu\epn\visual\imagenes\morfemas" />
-      <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana\src\main\java\ec\edu\epn\visual\imagenes\iconos" />
-      <recent name="C:\Users\user\IdeaProjects\TraductorDeAsana\src\main\java\ec\edu\epn\visual\imagenes" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -101,7 +103,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703702676594</updated>
+      <workItem from="1704248503039" duration="1079000" />
+      <workItem from="1704249609846" duration="776000" />
+      <workItem from="1704250515497" duration="3178000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

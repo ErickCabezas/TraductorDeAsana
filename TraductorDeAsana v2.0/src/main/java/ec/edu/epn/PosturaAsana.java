@@ -37,9 +37,9 @@ public class PosturaAsana {
     //Es el método empleado para presentar la traducción de la postura, junto a sus morfemas.
     @Override
     public String toString() {
-        return "Traducción de la POSTURA: " + sanscrito +
-                "\n==> Inglés: " + ingles +
-                "\n==> Español: " + español +
+        return "Traducción de la POSTURA: " + sanscrito + "." +
+                "\nEn Inglés es: " + ingles + "." +
+                "\nEn Español es: " + español + "." +
                 "\n" + presentarTraducionDeMorfemas(this.palabrasBase);
     }
 

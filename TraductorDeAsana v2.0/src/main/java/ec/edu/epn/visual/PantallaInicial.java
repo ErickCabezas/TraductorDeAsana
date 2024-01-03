@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 
 
 public class PantallaInicial extends JFrame {
-
-
     private JPanel panelPrincipal;
     private JButton iniciarButton;
     private JButton acercaDelProgramaButton;
@@ -17,9 +15,9 @@ public class PantallaInicial extends JFrame {
 
 
     public PantallaInicial() {
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoIniciar.png",iniciarButton);
-        this.colocarIconos("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoAcercaDe.png",acercaDelProgramaButton);
-        panelCentral.add(this.retornarImagen("robotInicio.gif"));
+        this.colocarIconos("/iconos/iconoVentana.png",iniciarButton);
+        this.colocarIconos("/iconos/iconoAcercaDe.png",acercaDelProgramaButton);
+        panelCentral.add(this.retornarImagen("/robotInicio.gif"));
 
         iniciarButton.addActionListener(new ActionListener() {
             @Override
@@ -71,12 +69,12 @@ public class PantallaInicial extends JFrame {
         setLocationRelativeTo(null);
         add(panelPrincipal);
         setVisible(true);
-        Image image = Toolkit.getDefaultToolkit().getImage("src/main/java/ec/edu/epn/visual/imagenes/iconos/iconoVentana.png");
+        Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/iconos/iconoVentana.png"));
         setIconImage(image);
     }
 
-    public void colocarIconos(String direccion, @org.jetbrains.annotations.NotNull JButton boton){
-        ImageIcon iconoNuevo = new ImageIcon(direccion);
+    public void colocarIconos(String direccion, JButton boton){
+        ImageIcon iconoNuevo = new ImageIcon(getClass().getResource(direccion));
         Image scaledIcon = iconoNuevo.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         boton.setIcon(new ImageIcon(scaledIcon));
         boton.setPreferredSize(new Dimension(50, 50));
@@ -84,11 +82,9 @@ public class PantallaInicial extends JFrame {
     }
 
     public JLabel retornarImagen(String nombreImagen){
-        ImageIcon imagen = new ImageIcon("src/main/java/ec/edu/epn/visual/imagenes/ventanas/"+nombreImagen);
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/ventanas"+nombreImagen));
         Image scaledIcon = imagen.getImage().getScaledInstance(250, 200, Image.SCALE_DEFAULT);
         JLabel label = new JLabel(new ImageIcon(scaledIcon));
         return label;
     }
-
-
 }

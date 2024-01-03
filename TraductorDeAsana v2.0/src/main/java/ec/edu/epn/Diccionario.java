@@ -27,31 +27,37 @@ public class Diccionario {
 
     /*Las posturas son leidas y guardadas en el ArrayList. Este algoritmo es igual para los morfemas.*/
     public void obtenerPosturas() {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/posturasAsana.txt"))) {
+        try (InputStream is = getClass().getResourceAsStream("/posturasAsana.txt");
+             BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+
             String linea;
             while ((linea = br.readLine()) != null) {
                 PosturaAsana posturaAsana = gson.fromJson(linea, PosturaAsana.class);
-                if(!(posturaAsana.getSanscrito()==null)&&!(posturaAsana.getEspañol()==null)&&!(posturaAsana.getIngles()==null)&&!(posturaAsana.getPalabrasBase()==null)){
+                if (!(posturaAsana.getSanscrito() == null) && !(posturaAsana.getEspañol() == null)
+                        && !(posturaAsana.getIngles() == null) && !(posturaAsana.getPalabrasBase() == null)) {
                     this.posturas.add(posturaAsana);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Archivo no encontrado");
+            System.out.println("Error al leer el archivo de texto: " + e.getMessage());
         }
     }
 
 
     public void obtenerMorfema() {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/morfemas.txt"))) {
+        try (InputStream is = getClass().getResourceAsStream("/morfemas.txt");
+             BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+
             String linea;
             while ((linea = br.readLine()) != null) {
-                Morfema morfemas = gson.fromJson(linea, Morfema.class);
-                if(!(morfemas.getSanscrito()==null)&&!(morfemas.getEspañol()==null)&&!(morfemas.getIngles()==null)){
-                    this.morfemas.add(morfemas);
+                Morfema morfema = gson.fromJson(linea, Morfema.class);
+                if (!(morfema.getSanscrito() == null) && !(morfema.getEspañol() == null)
+                        && !(morfema.getIngles() == null)) {
+                    this.morfemas.add(morfema);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Archivo no encontrado");
+            System.out.println("Error al leer el archivo de texto: " + e.getMessage());
         }
     }
 
