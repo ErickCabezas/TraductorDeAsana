@@ -14,6 +14,8 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import java.io.File;
+import java.io.InputStream;
+import java.io.BufferedInputStream;
 
 
 public class PantallaTraduccionPostura extends JFrame {
@@ -166,7 +168,9 @@ public class PantallaTraduccionPostura extends JFrame {
 
     public void reproducirAudio(String audio){
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(getClass().getResource("/audio/"+audio).toURI()).getAbsoluteFile());
+            InputStream path = getClass().getResourceAsStream("/audio/"+audio);
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(path);
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(bufferedInputStream);
             clip = AudioSystem.getClip();
             clip.open(audioInputStream);
             clip.start();
