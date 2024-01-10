@@ -21,6 +21,14 @@ En el mundo del yoga, la comprensión de posturas en español e inglés es cruci
 </p>
 4. Para regresar al menú de selección de traducción simplemente se debe dar click en el botón de regresar que se encuentra en la parte inferior.
 
+## Instalación
+#### Pasos a seguir
+Primero que nada, es necesario descargar el instalador del programa. Este se puede bajar del siguiente URL:
+
+https://epnecuador-my.sharepoint.com/:u:/g/personal/bryan_rosillo_epn_edu_ec/EXdszeQS5-1Fsq2y8I0zeHEBsaNBK-dq_p8XH-0lScz36A?e=X2nr4l
+
+Una vez ejecutado, el programa estará instalado en tu ordenador. Para abrirlo, puedes revisar tu escritorio, ahí estará el acceso directo de la aplicación. 
+
 ## Preguntas frecuentes
 #### ¿Si coloco una postura solamente con mayúsculas me dará como resultado una traducción correcta?
 Claro 🤠, en caso de que ingreses una palabra solamente con mayúsuculas o incluso combines las mismas con minúsculas te dará una traducción correcta.
