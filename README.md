@@ -1,4 +1,4 @@
-# Introduccion
+# Introducción
 En el mundo del yoga, la comprensión de posturas en español e inglés es crucial. Imagina un espacio donde practicantes y profesores puedan explorar posturas con claridad lingüística. Esta plataforma no solo facilita la práctica fluida, sino que también fomenta la conexión cultural en la comunidad global del yoga.
 ## ¿Cómo funciona la app?
 1. Primero se necesita iniciar la aplicación, una vez realizado esto se mostrará el menú de bienvenida en donde tenemos la opción de ingresar al programa o saber un poco más de información sobre lo que puede realizar la aplicación.
