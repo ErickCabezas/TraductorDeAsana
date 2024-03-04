@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TraductorDeAsana:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TraductorDeAsana_jar</output-path>
+    <root id="archive" name="TraductorDeAsana.jar">
+      <element id="module-output" name="TraductorDeAsana" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,20 @@
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido","palabrasBase":"parivrtta;trikona;asana", "nombreImagen":"postura19"}
+{"sanscrito":"Tadasana","ingles":"Mountain Pose","español":"Postura de la Montaña","palabrasBase":"tada;trikona;asana", "nombreImagen":"postura2"}
+{"sanscrito":"Adho Mukha Svanasana","ingles":"Downward-Facing Dog","español":"Perro mirando hacia abajo","palabrasBase":"adho;mukha;svana;asana", "nombreImagen":"postura3"}
+{"sanscrito":"Virabhadrasana I","ingles":"Warrior I","español":"Guerrero I","palabrasBase":"Virabhadra;asana", "nombreImagen":"postura4"}
+{"sanscrito":"Virabhadrasana II","ingles":"Warrior II","español":"Guerrero II","palabrasBase":"Virabhadra;asana", "nombreImagen":"postura5"}
+{"sanscrito":"Vrikshasana","ingles":"Tree Pose","español":"Postura del Árbol","palabrasBase":"Vriksha;asana", "nombreImagen":"postura6"}
+{"sanscrito":"Balasana","ingles":"Child Pose","español":"Postura del Niño","palabrasBase":"Bala;asana", "nombreImagen":"postura7"}
+{"sanscrito":"Ardha Bhujangasana","ingles":"Half Cobra Pose","español":"Postura de la Cobra a la mitad","palabrasBase":"Ardha;Bhujanga;asana", "nombreImagen":"postura8"}
+{"sanscrito":"Paschimottanasana","ingles":"Seated Forward Bend","español":"Flexión hacia adelante sentado","palabrasBase":"paschima;uttana;asana", "nombreImagen":"postura9"}
+{"sanscrito":"Setu Bandhasana","ingles":"Bridge Pose","español":"Postura del Puente","palabrasBase":"setu;bandha;asana", "nombreImagen":"postura10"}
+{"sanscrito":"Shavasana","ingles":"Corpse Pose","español":"Postura del Cadáver","palabrasBase":"Shava;asana", "nombreImagen":"postura11"}
+{"sanscrito":"Trikonasana","ingles":"Triangle Pose","español":"Postura del Triángulo","palabrasBase":"trikona;asana", "nombreImagen":"postura12"}
+{"sanscrito":"Kumbhakasana","ingles":"Plank Pose","español":"Postura de la Plancha","palabrasBase":"Kumbhaka;asana", "nombreImagen":"postura13"}
+{"sanscrito":"Matsyasana","ingles":"Fish Pose","español":"Postura del Pez","palabrasBase":"matsya;asana", "nombreImagen":"postura14"}
+{"sanscrito":"Utkatasana","ingles":"Chair Pose","español":"Postura de la Silla","palabrasBase":"utkata;asana", "nombreImagen":"postura15"}
+{"sanscrito":"Malasana","ingles":"Garland Pose","español":"Postura de la Guirnalda","palabrasBase":"mala;asana", "nombreImagen":"postura16"}
+{"sanscrito":"Eka Pada Rajakapotasana","ingles":"Pigeon Pose","español":"Postura de la Paloma","palabrasBase":"eka;pada;raja;kapota;asana", "nombreImagen":"postura17"}
+{"sanscrito":"Urdhva Hastasana","ingles":"Upward Salute","español":"Saludo hacia arriba","palabrasBase":"urdhva;hasta;asana", "nombreImagen":"postura18"}
+{"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido","palabrasBase":"parivrtta;trikona;asana", "nombreImagen":"postura19"}
+{"sanscrito":"Parivrtta Janu Sirsasana","ingles":"Revolved Head To Knee Pose","español":"Postura de la Cabeza a la Rodilla Invertida","palabrasBase":"parivrtta;janu;sirsa;asana", "nombreImagen":"postura20"}
