@@ -12,6 +12,7 @@ public class PantallaBienvenida extends JFrame {
     private JButton traducirMorfemaButton;
     private JButton regresarButton;
     private JPanel panelCentral;
+    private JButton agregarPosturaButton;
 
     public PantallaBienvenida() {
         this.colocarIconos("/iconos/iconoRegresar.png",regresarButton);
@@ -25,6 +26,14 @@ public class PantallaBienvenida extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 PantallaTraduccionPostura pantallaTraduccionPostura = new PantallaTraduccionPostura();
                 pantallaTraduccionPostura.crearFrame(getExtendedState());
+                dispose();
+            }
+        });
+        agregarPosturaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AgregarPosturas agregarPosturas = new AgregarPosturas();
+                agregarPosturas.crearFrame(getExtendedState());
                 dispose();
             }
         });

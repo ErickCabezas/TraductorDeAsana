@@ -61,21 +61,27 @@ public class Diccionario {
         }
     }
 
-    public void escribirPostura(PosturaAsana postura) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/main/resources/posturasAsana.txt", true))) {
+    public boolean escribirPostura(PosturaAsana postura) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("/posturasAsana.txt"))) {
             String json = gson.toJson(postura);
-            bw.write(json);
-            bw.newLine();
+            bw.write(json + "\n");
+            return true;
         } catch (IOException e) {
             System.out.println("Error al ingresar postura: " + e.getMessage());
+            e.printStackTrace();
+            return false;
         }
     }
 
-    //forma de ingresar palabras base: ardha=mitad=half; chandra=luna=moon.....
+    //forma de ingresar palabras base: ardha; chandra.....
     public boolean agregarPostura(String sanscrito, String ingles, String español, String palabrasBase) {
-        PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español, palabrasBase,"newImagen");
-        escribirPostura(posturaAsana);
-        return this.posturas.add(posturaAsana);
+        if(buscarPosturaSanscrito(sanscrito)==null){
+            PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español, palabrasBase,"newImagen");
+            System.out.println(posturaAsana.getEspañol());
+            return escribirPostura(posturaAsana) && this.posturas.add(posturaAsana);
+        }else{
+            return false;
+        }
     }
 
 
