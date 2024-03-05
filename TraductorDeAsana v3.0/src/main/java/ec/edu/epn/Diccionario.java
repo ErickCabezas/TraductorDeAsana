@@ -27,6 +27,7 @@ public class Diccionario {
 
     /*Las posturas son leidas y guardadas en el ArrayList. Este algoritmo es igual para los morfemas.*/
     public void obtenerPosturas() {
+        posturas.clear();
         try (InputStream is = getClass().getResourceAsStream("/posturasAsana.txt");
              BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
 
@@ -45,6 +46,7 @@ public class Diccionario {
 
 
     public void obtenerMorfema() {
+        morfemas.clear();
         try (InputStream is = getClass().getResourceAsStream("/morfemas.txt");
              BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
 

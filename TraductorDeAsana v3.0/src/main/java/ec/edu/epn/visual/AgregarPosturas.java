@@ -32,7 +32,8 @@ public class AgregarPosturas extends JFrame{
                     String palabrasBase=txtPalabrasBase.getText();
                     if(diccionario.agregarPostura(palabraSanscrit,palabraIngles,palabraEspa,palabrasBase)){
                         JOptionPane.showMessageDialog(null,
-                                "Postura agragada correctamente", "Notificación", JOptionPane.INFORMATION_MESSAGE);
+                                "Postura agragada correctamente,\n" +
+                                        "Debe reiniciar el programa para aplicar los cambios", "Notificación", JOptionPane.INFORMATION_MESSAGE);
                         limpiarPantalla();
                     }else{
                         JOptionPane.showMessageDialog(null,
