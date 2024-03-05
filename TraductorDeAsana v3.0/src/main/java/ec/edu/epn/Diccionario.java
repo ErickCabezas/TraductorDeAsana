@@ -61,10 +61,13 @@ public class Diccionario {
         }
     }
 
+    /*El método recive como parametro una postura que sera transformado a json para despues
+    * escribirla en el archivo posturasAsana.txt*/
     public boolean escribirPostura(PosturaAsana postura) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("/posturasAsana.txt"))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("TraductorDeAsana v3.0/src/main/resources/posturasAsana.txt",true))) {
             String json = gson.toJson(postura);
             bw.write(json + "\n");
+            obtenerPosturas();
             return true;
         } catch (IOException e) {
             System.out.println("Error al ingresar postura: " + e.getMessage());
@@ -73,6 +76,8 @@ public class Diccionario {
         }
     }
 
+    /*En este método se crea un objeto tipo postura para despues mandarlo a escribir en el archivo
+     * posturasAsana.txt con el metodo escribirPostura*/
     //forma de ingresar palabras base: ardha; chandra.....
     public boolean agregarPostura(String sanscrito, String ingles, String español, String palabrasBase) {
         if(buscarPosturaSanscrito(sanscrito)==null){

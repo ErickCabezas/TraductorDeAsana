@@ -25,17 +25,26 @@ public class AgregarPosturas extends JFrame{
         btnGuardar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String palabraSanscrit=txtSanscrit.getText();
-                String palabraEspa=txtEsp.getText();
-                String palabraIngles=txtingles.getText();
-                String palabrasBase=txtPalabrasBase.getText();
-                if(diccionario.agregarPostura(palabraSanscrit,palabraIngles,palabraEspa,palabrasBase)){
-                    JOptionPane.showMessageDialog(null,
-                            "Postura agragada correctamente", "Notificación", JOptionPane.INFORMATION_MESSAGE);
+                if(camposllenos()){
+                    String palabraSanscrit=txtSanscrit.getText();
+                    String palabraEspa=txtEsp.getText();
+                    String palabraIngles=txtingles.getText();
+                    String palabrasBase=txtPalabrasBase.getText();
+                    if(diccionario.agregarPostura(palabraSanscrit,palabraIngles,palabraEspa,palabrasBase)){
+                        JOptionPane.showMessageDialog(null,
+                                "Postura agragada correctamente", "Notificación", JOptionPane.INFORMATION_MESSAGE);
+                        limpiarPantalla();
+                    }else{
+                        JOptionPane.showMessageDialog(null,
+                                "Error al agregar postura,\n"+
+                                        "la postura pude ya existir en el diccionario",
+                                "Notificación", JOptionPane.ERROR_MESSAGE);
+                        limpiarPantalla();
+                    }
                 }else{
                     JOptionPane.showMessageDialog(null,
                             "Error al agregar postura,\n"+
-                                    "la postura pude ya existir en el diccionario",
+                                    "llene todos los campos solicitados",
                             "Notificación", JOptionPane.ERROR_MESSAGE);
                 }
             }
@@ -77,6 +86,24 @@ public class AgregarPosturas extends JFrame{
         boton.setIcon(new ImageIcon(scaledIcon));
         boton.setPreferredSize(new Dimension(60, 60));
         boton.setIconTextGap(10);
+    }
+
+    public void limpiarPantalla(){
+        txtEsp.setText(null);
+        txtingles.setText(null);
+        txtSanscrit.setText(null);
+        txtPalabrasBase.setText(null);
+    }
+
+    public boolean camposllenos(){
+        if (!txtEsp.getText().isEmpty() && !txtSanscrit.getText().isEmpty() && !txtingles.getText().isEmpty()
+                && !txtPalabrasBase.getText().isEmpty()) {
+            // Todos los campos están llenos
+            return true;
+        } else {
+            // Al menos un campo está vacío
+            return false;
+        }
     }
 
 

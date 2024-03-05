@@ -18,3 +18,6 @@
 {"sanscrito":"Urdhva Hastasana","ingles":"Upward Salute","español":"Saludo hacia arriba","palabrasBase":"urdhva;hasta;asana", "nombreImagen":"postura18"}
 {"sanscrito":"Parivrtta Trikonasana","ingles":"Revolved Triangle Pose","español":"Postura del Triángulo Invertido","palabrasBase":"parivrtta;trikona;asana", "nombreImagen":"postura19"}
 {"sanscrito":"Parivrtta Janu Sirsasana","ingles":"Revolved Head To Knee Pose","español":"Postura de la Cabeza a la Rodilla Invertida","palabrasBase":"parivrtta;janu;sirsa;asana", "nombreImagen":"postura20"}
+{"sanscrito":"navasana","ingles":"boat pose","español":"postura de la barca","palabrasBase":"nava;asana","nombreImagen":"newImagen"}
+{"sanscrito":"savasana","ingles":"corpse pose","español":"postura del cadaver","palabrasBase":"sava: asana","nombreImagen":"newImagen"}
+{"sanscrito":"tolasana","ingles":"elevated lotus posture","español":"postura de loto elevada","palabrasBase":"tola:asana","nombreImagen":"newImagen"}
