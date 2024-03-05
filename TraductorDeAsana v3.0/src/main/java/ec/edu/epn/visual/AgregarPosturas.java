@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AgregarPosturas extends JFrame{
-    private JPanel panelCentral;
     private JTextField txtSanscrit;
     private JTextField txtingles;
     private JTextField txtEsp;
@@ -16,8 +15,12 @@ public class AgregarPosturas extends JFrame{
     private JButton btnGuardar;
     private JPanel panelAgregarPosturas;
     private JButton btnRegresar;
+    private JPanel panelAyuda;
 
     public AgregarPosturas() {
+        this.colocarIconos("/iconos/iconoGuardar.png",btnGuardar);
+        this.colocarIconos("/iconos/iconoRegresar.png",btnRegresar);
+        panelAyuda.add(this.retornarImagen("/robotAgregar.gif"));
         Diccionario diccionario = new Diccionario();
         btnGuardar.addActionListener(new ActionListener() {
             @Override
@@ -60,4 +63,21 @@ public class AgregarPosturas extends JFrame{
         Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/iconos/iconoVentana.png"));
         setIconImage(image);
     }
+
+    public JLabel retornarImagen(String nombreImagen){
+        ImageIcon imagen = new ImageIcon(getClass().getResource("/ventanas"+nombreImagen));
+        Image scaledIcon = imagen.getImage().getScaledInstance(250, 200, Image.SCALE_DEFAULT);
+        JLabel label = new JLabel(new ImageIcon(scaledIcon));
+        return label;
+    }
+
+    public void colocarIconos(String direccion, JButton boton){
+        ImageIcon iconoNuevo = new ImageIcon(getClass().getResource(direccion));
+        Image scaledIcon = iconoNuevo.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+        boton.setIcon(new ImageIcon(scaledIcon));
+        boton.setPreferredSize(new Dimension(60, 60));
+        boton.setIconTextGap(10);
+    }
+
+
 }

@@ -18,6 +18,7 @@ public class PantallaBienvenida extends JFrame {
         this.colocarIconos("/iconos/iconoRegresar.png",regresarButton);
         this.colocarIconos("/iconos/iconoPostura.png",traducirPosturaButton);
         this.colocarIconos("/iconos/iconoMorfema.png",traducirMorfemaButton);
+        this.colocarIconos("/iconos/iconoAgregar2.png",agregarPosturaButton);
         panelCentral.add(this.retornarImagen("/robotBienvenida.gif"));
 
 
@@ -59,7 +60,7 @@ public class PantallaBienvenida extends JFrame {
         if(maximizada!=0){
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         }
-        setSize(600, 500);
+        setSize(800, 500);
         setTitle("Traductor");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setResizable(true);
