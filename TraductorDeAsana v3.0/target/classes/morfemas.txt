@@ -31,4 +31,4 @@
 {"sanscrito":"Nava","ingles":"boat","español":"barca"}
 {"sanscrito":"Sava","ingles":"corpse","español":"cadáver"}
 {"sanscrito":"Tola","ingles":"lotus","español":"loto"}
-{"sanscrito":"Tola","ingles":"lotus","español":"loto"}
+{"sanscrito":"Sukha","ingles":"easy","español":"fácil"}
