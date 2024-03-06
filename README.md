@@ -3,23 +3,26 @@ En el mundo del yoga, la comprensión de posturas en español e inglés es cruci
 ## ¿Cómo funciona la app?
 1. Primero se necesita iniciar la aplicación, una vez realizado esto se mostrará el menú de bienvenida en donde tenemos la opción de ingresar al programa o saber un poco más de información sobre lo que puede realizar la aplicación.
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/inicioAPP.png" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v3.0/Documentación%20v3.0/imágenes/inicio.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
 </p>
-2. Una vez seleccionada la opción de ingreso aparecerán 2 posibilidades. La primera nos permitirá traducir posturas mientras que la segunda morfemas. Su metodología funciona de igual manera, en donde se debe seleccionar el idioma desde el cual se ingresará la palabra, posterior a ello se digita la palabra. Lo explicado se puede observar en las 2 imágenes posteriores.
+2. Una vez seleccionada la opción de ingreso aparecerán 3 posibilidades. La primera nos permitirá traducir posturas mientras que la segunda morfemas. Su metodología funciona de igual manera, en donde se debe seleccionar el idioma desde el cual se ingresará la palabra, posterior a ello se digita la palabra. Para el tercer caso se tiene el agregar una postura, para ello se selecciona dicha opción y se llenan los campos solicitados. Lo explicado se puede observar en las 3 imágenes posteriores.
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/bienvenidaAPP.png" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v3.0/Documentación%20v3.0/imágenes/menuPrincipal.jpg" alt="Menu de la aplicacion" width="500" height="400">
 </p>
-<p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/traduccion.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
-</p>
+
 3. En el caso de ingresar una postura se mostrarán sus respectivas traducciones junto con un GIF que demuestra como realizar la misma, además se podrá escuchar un audio de fondo si se da click en el recuadro de reproducir, de igual manera si queremos que el audio se detenga se tendrá que dar nuevamente click sobre este recuadro . Para el morfema en cambio, se mostrará la traducción junto con una imagen del significado de la misma. En las siguiente imágenes podemos observar un poco del funcionamiento para ambos casos de traducción.
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/postura.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v3.0/Documentación%20v3.0/imágenes/postura.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="500">
 </p>
 <p align="center">
-    <img src="TraductorDeAsana%20v2.0/Documentación%20v2.0/morfema.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="400">
+    <img src="TraductorDeAsana%20v3.0/Documentación%20v3.0/imágenes/morfema.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="500">
 </p>
-4. Para regresar al menú de selección de traducción simplemente se debe dar click en el botón de regresar que se encuentra en la parte inferior.
+4. Para ingresar una nueva postura simplemente se deben completar los campos requeridos, una vez se hayan completado dichos campos se coloca en el botón de guardar, con ello la postura se almacenará en el sistema de forma exitosa.
+<p align="center">
+    <img src="TraductorDeAsana%20v3.0/Documentación%20v3.0/imágenes/agregarPostura.jpg" alt="Mensaje de inicio de la aplicación" width="500" height="500">
+</p>
+
+5. En cada una de las interfases si se desea regresar se debe aplastar el botón con este mismo nombre y se volverá al menú principal dee manera exitosa.
 
 ## Instalación
 #### Pasos a seguir
