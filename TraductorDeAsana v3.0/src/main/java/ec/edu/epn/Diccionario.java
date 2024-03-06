@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 /*La clase Diccionario tiene todas las posturas, y morfemas, incluidas sus traducciones.
 * En una primera instancia, estas están almacenadas en un archivo de texto. Posteriormente
@@ -13,6 +14,7 @@ public class Diccionario {
     private ArrayList<PosturaAsana> posturas;
     private ArrayList<Morfema> morfemas;
     private Gson gson;
+    Logger logger = Logger.getLogger(getClass().getName());
 
     /*Al momento de construir el objeto Diccionario, automáticamente se llenan los
     * ArrayLists con los datos de los archivos de texto. Esto se hace con los métodos
@@ -34,13 +36,13 @@ public class Diccionario {
             String linea;
             while ((linea = br.readLine()) != null) {
                 PosturaAsana posturaAsana = gson.fromJson(linea, PosturaAsana.class);
-                if (!(posturaAsana.getSanscrito() == null) && !(posturaAsana.getEspañol() == null)
-                        && !(posturaAsana.getIngles() == null) && !(posturaAsana.getPalabrasBase() == null)) {
+                if ((posturaAsana.getSanscrito() != null) && (posturaAsana.getEspañol() != null)
+                        && (posturaAsana.getIngles() != null) && (posturaAsana.getPalabrasBase() != null)) {
                     this.posturas.add(posturaAsana);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al leer el archivo de texto: " + e.getMessage());
+            logger.info("Error al leer el archivo de texto: " + e.getMessage());
         }
     }
 
@@ -53,13 +55,13 @@ public class Diccionario {
             String linea;
             while ((linea = br.readLine()) != null) {
                 Morfema morfema = gson.fromJson(linea, Morfema.class);
-                if (!(morfema.getSanscrito() == null) && !(morfema.getEspañol() == null)
-                        && !(morfema.getIngles() == null)) {
+                if ((morfema.getSanscrito() != null) && (morfema.getEspañol() != null)
+                        && (morfema.getIngles() != null)) {
                     this.morfemas.add(morfema);
                 }
             }
         } catch (IOException e) {
-            System.out.println("Error al leer el archivo de texto: " + e.getMessage());
+            logger.info("Error al leer el archivo de texto: " + e.getMessage());
         }
     }
 
@@ -72,7 +74,7 @@ public class Diccionario {
             obtenerPosturas();
             return true;
         } catch (IOException e) {
-            System.out.println("Error al ingresar postura: " + e.getMessage());
+            logger.info("Error al ingresar postura: " + e.getMessage());
             e.printStackTrace();
             return false;
         }
@@ -84,7 +86,7 @@ public class Diccionario {
     public boolean agregarPostura(String sanscrito, String ingles, String español, String palabrasBase) {
         if(buscarPosturaSanscrito(sanscrito)==null){
             PosturaAsana posturaAsana = new PosturaAsana(sanscrito, ingles, español, palabrasBase,"newImagen");
-            System.out.println(posturaAsana.getEspañol());
+            logger.info(posturaAsana.getEspañol());
             return escribirPostura(posturaAsana) && this.posturas.add(posturaAsana);
         }else{
             return false;

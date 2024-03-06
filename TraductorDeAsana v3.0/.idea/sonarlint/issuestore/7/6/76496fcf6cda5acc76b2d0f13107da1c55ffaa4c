@@ -1,0 +1,29 @@
+
+`	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ÿı Öøÿÿÿÿ
+h
+java:S11920"RDefine a constant instead of duplicating this literal "inicioPostura.gif" 3 times.(ÿ¡ö¤
+>
+java:S16042"(Make this anonymous inner class a lambda(Úú¾ 
+C
+java:S1604X"(Make this anonymous inner class a lambda(“üï£øÿÿÿÿ
+C
+java:S1604l"(Make this anonymous inner class a lambda(€û¬£üÿÿÿÿ
+C
+java:S1604z"(Make this anonymous inner class a lambda(²¬»üÿÿÿÿ
+y
+java:S1488¨"]Immediately return this expression instead of assigning it to the temporary variable "label".(¯íÖ‹üÿÿÿÿ
+D
+java:S1948")Make "postura" transient or serializable.(Ê»‚ûÿÿÿÿ
+A
+java:S1948 "&Make "clip" transient or serializable.(ñÉ²èıÿÿÿÿ
+t
+java:S1171""YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+m
+java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¬ï×ïúÿÿÿÿ
+Y
+java:S3252"=Use static access with "java.awt.Frame" for "MAXIMIZED_BOTH".(õœÃúÿÿÿÿ
+A	java:S106¶"+Replace this use of System.out by a logger.(ÿñØ…
+?
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å

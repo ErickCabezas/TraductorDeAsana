@@ -12,32 +12,10 @@
     <list default="true" id="89333a6d-5077-4569-bf06-8a2785be247d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/AgregarPosturas.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/AgregarPosturas.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/AgregarPosturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/AgregarPosturas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/visual/PantallaBienvenida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Diccionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/Morfema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/Morfema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/PosturaAsana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/PosturaAsana.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaBienvenida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaInicial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionMorfema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/edu/epn/visual/PantallaTraduccionPostura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraductorDeAsana.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TraductorDeAsana.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Diccionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/edu/epn/PosturaAsana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,27 +41,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;142&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;317&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Downloads/Calidad/TraductorDeAsana/TraductorDeAsana v3.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37430942&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "142",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "317",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chris/IdeaProjects/TraductorDeAsana/TraductorDeAsana v3.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37430942",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\USER\IdeaProjects\TraductorDeAsana v2.0\src\main\resources" />
@@ -135,6 +116,7 @@
       <workItem from="1704248503039" duration="1079000" />
       <workItem from="1704249609846" duration="776000" />
       <workItem from="1704250515497" duration="3178000" />
+      <workItem from="1709698686431" duration="777000" />
     </task>
     <servers />
   </component>

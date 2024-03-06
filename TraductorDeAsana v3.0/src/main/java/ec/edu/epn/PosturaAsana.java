@@ -24,14 +24,14 @@ public class PosturaAsana {
     /*Este método se encarga de separar las palabras base, de traducirlas,y de
     almacenarlas en un String.*/
     public String presentarTraducionDeMorfemas(String palabrasBase) {
-        String traduccionMorfemas = "";
+        StringBuilder traduccionMorfemas = new StringBuilder();
         String[] morfemas = palabrasBase.split(";");
         Diccionario diccionario = new Diccionario();
         int i = 0;
         for (i = 0; i < morfemas.length; i++) {
-            traduccionMorfemas += diccionario.buscarMorfemaSanscrito(morfemas[i]);
+            traduccionMorfemas.append(diccionario.buscarMorfemaSanscrito(morfemas[i]));
         }
-        return traduccionMorfemas;
+        return traduccionMorfemas.toString();
     }
 
     //Es el método empleado para presentar la traducción de la postura, junto a sus morfemas.
